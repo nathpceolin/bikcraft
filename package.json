@@ -1,0 +1,22 @@
+{
+  "name": "nath-bikcraft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathpceolin/bikcraft.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathpceolin/bikcraft/issues"
+  },
+  "homepage": "https://github.com/nathpceolin/bikcraft#readme",
+  "dependencies": {
+    "prettier": "^3.0.2"
+  }
+}
