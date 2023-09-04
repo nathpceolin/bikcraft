@@ -1,5 +1,5 @@
 .introducao-bg {
-  background-color: var(--preto);
+  background: var(--preto);
   color: var(--branco);
   box-shadow: inset 0 -120px var(--branco);
 }
@@ -7,11 +7,7 @@
 .introducao {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0px 32px;
-  max-width: 1200px;
-  box-sizing: border-box;
-  padding: 20px;
-  margin: 0 auto;
+  gap: 0px 40px;
 }
 
 .introducao h1 {
@@ -21,6 +17,7 @@
 .introducao p {
   color: var(--cinza-claro);
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .introducao-conteudo {
@@ -28,10 +25,9 @@
   padding-bottom: 200px;
 }
 
-.introducao img {
+#introducao-img {
   height: 100%;
   object-fit: cover;
-  border-radius: 4px;
 }
 
 @media (max-width: 1200px) {
@@ -49,7 +45,6 @@
   .introducao-bg {
     background-color: var(--preto);
     box-shadow: inset 0 -60px var(--branco);
-    /* padding-top: 0px; */
   }
 
   .introducao {
