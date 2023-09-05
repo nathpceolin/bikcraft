@@ -1,0 +1,10 @@
+.termos h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 40px;
+}
+
+
+.termos p:last-child {
+  padding-bottom: 40px;
+}
