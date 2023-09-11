@@ -15,6 +15,7 @@
 @import "./utilitarios/tipografia.css";
 @import "./utilitarios/cores.css";
 @import "./utilitarios/titulos.css";
+@import "./utilitarios/formulario.css";
 
 /*Bicicletas*/
 @import "./bicicletas/lista-bicicletas.css";
@@ -27,3 +28,10 @@
 
 /*Bicicletas internas*/
 @import "./bicicleta/bicicleta-interna.css";
+
+/*Contato*/
+@import "./contato/contato.css";
+@import "./contato/lojas.css";
+
+/*Orcamento*/
+@import "./orcamento/orcamento.css";

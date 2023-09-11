@@ -1,0 +1,149 @@
+#contato {
+  background: linear-gradient(var(--preto) 600px, var(--fundo-claro) 0px);
+}
+
+.contatos {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  margin-bottom: 200px;
+}
+
+.contato-dados,
+.contato-formulario {
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.contato-dados {
+  background-color: var(--cinza-escuro);
+  border-radius: 5px 0px 0px 5px;
+}
+
+.contato-dados h2 {
+  color: var(--branco);
+  margin-bottom: 60px;
+}
+
+.contato-endereco {
+  background: url("../../img/icones/local.svg") no-repeat 0px 2px;
+  padding-left: 28px;
+}
+
+.contato-endereco p {
+  color: var(--cinza-claro);
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.contato-meios a {
+  display: block;
+  color: var(--cinza-claro);
+  max-width: max-content;
+  padding-left: 28px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.contato-meios a:hover {
+  color: var(--branco);
+}
+
+.contato-meios a:first-child {
+  background: url("../../img/icones/email.svg") no-repeat 0px 2px;
+}
+
+.contato-meios a:nth-child(2) {
+  margin-bottom: 32px;
+}
+
+.contato-meios a:last-child {
+  background: url("../../img/icones/telefone.svg") no-repeat 0px 2px;
+  margin-bottom: 60px;
+}
+
+.contato-redes {
+  display: flex;
+  gap: 32px;
+  padding-left: 28px;
+}
+
+.contato-formulario {
+  background: var(--branco);
+  border-radius: 0px 5px 5px 0px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form input,
+.form textarea {
+  font:
+    400 1rem/1.5 "Roboto",
+    sans-serif;
+  border: 1px solid var(--cinza-claro);
+  background-color: var(--fundo-claro);
+  border-radius: 4px;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--amarelo-escuro);
+  background: var(--branco);
+  box-shadow: 0 0 0 1px var(--amarelo-claro);
+}
+
+.form label {
+  display: block;
+  font:
+    600 1rem/1.5 "Poppins",
+    sans-serif;
+  margin-bottom: 4px;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+
+@media (max-width: 800px) {
+  .contatos {
+    grid-template-columns: 1fr;
+    padding: 0px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+
+  .contato-dados {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .contato-dados h2,
+  .contato-meios a:last-child {
+    margin-bottom: 32px;
+  }
+
+  .contato-formulario {
+    border-radius: 0 0 5px 5px;
+  }
+
+  .contato-dados,
+  .contato-formulario {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px){
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .form .col-2 {
+    grid-column: 1;
+  }
+}
